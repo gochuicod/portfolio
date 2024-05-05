@@ -1,9 +1,6 @@
 "use client"
 
 import { ChevronRight, FileBadge, Inbox } from "lucide-react";
-import { Card, CardContent } from "./ui/card";
-import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
-import Autoplay from 'embla-carousel-autoplay'
 import { motion } from "framer-motion";
 
 const carousel_data: Array<Object> = [
@@ -68,7 +65,8 @@ const Hero = () => {
           ))
         }
       </div>
-      <div className="flex flex-col w-[35%] bg-[#8285D0] rounded-[1vw] me-[2.5vw] p-[3vw]">
+      {/* <div className="flex flex-col w-[35%] bg-[#8285D0] rounded-[1vw] me-[2.5vw] p-[3vw]"> */}
+      <div className="flex flex-col w-[35%] bg-gradient-to-t from-[#4568dc] to-[#b06ab3] rounded-[1vw] me-[2.5vw] p-[3vw]">
         <div className="flex justify-center">
           <img className="object-cover object-bottom w-[20vw] h-[20vw] rotate-90 z-10 rounded-full border-[0.5vw] border-white p-[1vw]" src="/IMG_5211.webp" alt="..." />
         </div>
@@ -144,7 +142,7 @@ const Hero = () => {
           </div>
           <div className="flex flex-row min-w-[65%] h-full bg-black text-white rounded-[1vw]">
             <div className="flex w-[40%] justify-center items-center relative">
-              <img className="absolute top-0 left-0 object-contain w-[100vw] h-full rounded-[1vw] p-5" src="/sphere.svg" alt="..." />
+              <img className="absolute top-0 left-0 object-contain w-[100vw] h-full rounded-[1vw] p-5" src="/sphere.svg" alt="..." draggable={false} />
             </div>
             <div className="flex flex-col w-[60%] justify-center items-center bg-gradient-to-r from-[#f7971e] to-[#ffd200] h-full rounded-[1vw] relative">
               <ChevronRight className="absolute right-[0.5vw] top-[0.5vw] -rotate-45 w-[2vw] h-[2vw] text-black opacity-40"/>
