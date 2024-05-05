@@ -78,7 +78,7 @@ const Hero = () => {
         </div>
         <div className="flex flex-row mt-[2vw]">
           <div className="flex flex-col text-white leading-none w-full text-center">
-            <span className="text-[3.5vw] font-light">I'm,</span>
+            <span className="text-[3.5vw] font-light">I&apos;m,</span>
             <span className="text-[3.5vw] font-bold">Darelle</span>
             <span className="text-[3.5vw] font-bold">Gochuico</span>
             <h1 className="text-[1vw] mt-[2vw] flex flex-row items-center justify-center gap-x-[1vw]">
