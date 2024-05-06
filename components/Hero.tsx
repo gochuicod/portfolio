@@ -46,7 +46,7 @@ const links: Array<Object> = [
 
 const Hero = () => {
   return (
-    <div className="flex sm:flex-row flex-col h-auto sm:justify-center justify-start sm:ps-[0vw] ps-[5vw] pe-[5vw] py-[4vw] gap-y-[10vw]">
+    <div className="flex sm:flex-row flex-col h-auto sm:justify-center justify-start sm:ps-[0vw] ps-[5vw] pe-[5vw] py-[2vw] gap-y-[10vw] bg-white">
       <div className="sm:flex sm:flex-col hidden w-[5%] justify-center space-y-[5vw] font-medium text-[1vw]">
         {
           links?.map((item: any, index: number) => (
