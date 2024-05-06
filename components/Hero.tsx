@@ -46,8 +46,8 @@ const links: Array<Object> = [
 
 const Hero = () => {
   return (
-    <div className="flex flex-row min-h-screen justify-center pe-[5vw] py-[5vw]">
-      <div className="flex flex-col w-[5%] justify-center space-y-[5vw] font-medium text-[1vw]">
+    <div className="flex sm:flex-row flex-col min-h-screen sm:justify-center justify-start sm:ps-[0vw] ps-[5vw] pe-[5vw] py-[2vw] gap-y-[10vw]">
+      <div className="sm:flex sm:flex-col hidden w-[5%] justify-center space-y-[5vw] font-medium text-[1vw]">
         {
           links?.map((item: any, index: number) => (
             <motion.p
@@ -66,11 +66,10 @@ const Hero = () => {
           ))
         }
       </div>
-      {/* <div className="flex flex-col w-[35%] bg-[#8285D0] rounded-[1vw] me-[2.5vw] p-[3vw]"> */}
-      <div className="flex flex-col w-[35%] bg-gradient-to-t from-[#4568dc] to-[#b06ab3] rounded-[1vw] me-[2.5vw] p-[3vw]">
+      <div className="flex flex-col sm:w-[35%] w-full bg-gradient-to-t from-[#4568dc] to-[#b06ab3] sm:rounded-[1vw] rounded-[4vw] me-[2.5vw] sm:p-[3vw] p-[10vw] justify-center sm:gap-y-[1vw] gap-y-[5vw]">
         <div className="flex justify-center">
           <Image
-            className="object-cover object-bottom w-[20vw] h-[20vw] rotate-90 z-10 rounded-full border-[0.5vw] border-white p-[1vw]"
+            className="object-cover object-bottom sm:w-[20vw] w-[60vw] sm:h-[20vw] h-[60vw] rotate-90 z-10 rounded-full sm:border-[0.5vw] border-[1.5vw] border-white sm:p-[1vw] p-[3vw]"
             src="/portfolio/IMG_5211.webp" alt="..."
             width={720}
             height={1080}
@@ -78,78 +77,58 @@ const Hero = () => {
         </div>
         <div className="flex flex-row mt-[2vw]">
           <div className="flex flex-col text-white leading-none w-full text-center">
-            <span className="text-[3.5vw] font-light">I&apos;m,</span>
-            <span className="text-[3.5vw] font-bold">Darelle</span>
-            <span className="text-[3.5vw] font-bold">Gochuico</span>
-            <h1 className="text-[1vw] mt-[2vw] flex flex-row items-center justify-center gap-x-[1vw]">
+            <span className="sm:text-[3.5vw] text-[10vw] font-light">I&apos;m,</span>
+            <span className="sm:text-[3.5vw] text-[10vw] font-bold">Darelle</span>
+            <span className="sm:text-[3.5vw] text-[10vw] font-bold">Gochuico</span>
+            <h1 className="sm:text-[1vw] text-[3vw] mt-[2vw] flex flex-row items-center justify-center gap-x-[1vw]">
               gochuicodarelleq@gmail.com
-              <Inbox className="w-[1.5vw] h-[1.5vw]" />
+              <Inbox className="sm:w-[1.5vw] w-[3vw] sm:h-[1.5vw] h-[3vw]" />
             </h1>
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-[60%] rounded-[1vw] gap-y-[2.5vw]">
+      <div className="flex flex-col sm:w-[60%] w-full rounded-[1vw] sm:gap-y-[2.5vw] gap-y-[10vw]">
         <div className="flex flex-row w-full h-[15%] rounded-[1vw] relative">
-          <ChevronRight className="absolute right-[-0.5vw] top-[-0.5vw] -rotate-45 w-[4vw] h-[4vw]" strokeWidth={3}/>
-          <h1 className="text-[5vw] tracking-[2.1vw] font-bold">My Portfolio</h1>
+          <ChevronRight className="absolute right-[-0.5vw] top-[-0.5vw] -rotate-45 sm:w-[4vw] w-[8vw] sm:h-[4vw] h-[8vw]" strokeWidth={3}/>
+          <h1 className="sm:text-[5vw] text-[10vw] tracking-[2.1vw] font-bold">My Portfolio</h1>
         </div>
-        <div className="flex flex-row h-[55%] items-center gap-x-[2.5vw]">
-          <div className="relative min-w-[75%] h-full">
+        <div className="flex sm:flex-row flex-col h-[55%] items-center gap-x-[2.5vw] sm:gap-y-[0vw] gap-y-[10vw]">
+          <div className="relative sm:min-w-[75%] min-w-full h-full">
             <ChevronRight className="absolute right-[0.5vw] top-[0.5vw] -rotate-45 w-[2vw] h-[2vw] text-white z-10"/>
-            <video className="absolute top-0 left-0 object-cover w-full h-full rounded-[1vw]" src="/portfolio/test_2.MOV" autoPlay loop muted>
+            <video className="object-cover w-full sm:h-[45vh] h-[40vh] sm:rounded-[1vw] rounded-[4vw]" src="/portfolio/test_2.MOV" autoPlay loop muted>
               <source src="/portfolio/test_2.MOV"/>
             </video>
           </div>
-          <div className="flex flex-col min-w-[20%] h-full">
-            <div className="flex flex-col h-[50%] bg-gradient-to-r from-[#a8ff78] from-40% to-[#78ffd6] justify-center items-center rounded-t-[1vw] relative">
-              <ChevronRight className="absolute right-[0.5vw] top-[0.5vw] -rotate-45 w-[2vw] h-[2vw] text-black opacity-40"/>
-              <div className="text-black">
-                <h1 className="font-bold text-[2.5vw]">29</h1>
-                <p className="font-normal text-[1.2vw]">TechStack</p>
+          <div className="flex flex-col sm:min-w-[20%] min-w-full h-full">
+            <div className="flex flex-col h-[50%] bg-gradient-to-r from-[#a8ff78] from-40% to-[#78ffd6] justify-center items-center relative sm:w-auto w-full sm:rounded-t-[1vw] rounded-t-[4vw] sm:py-[0vw] py-[10vw]">
+              <ChevronRight className="absolute sm:right-[0.5vw] right-[1.5vw] sm:top-[0.5vw] top-[1.5vw] -rotate-45 sm:w-[2vw] w-[8vw] sm:h-[2vw] h-[8vw] text-black opacity-40"/>
+              <div className="flex flex-col sm:items-start items-center text-black">
+                <h1 className="font-bold sm:text-[2.5vw] text-[10vw]">29</h1>
+                <p className="font-normal sm:text-[1.2vw] text-[5vw]">TechStack</p>
               </div>
             </div>
-            <div className="flex flex-row h-[50%] bg-gradient-to-l from-[#bc4e9c] from-1% to-[#f80759] justify-center items-center rounded-b-[1vw] relative">
-              <ChevronRight className="absolute right-[0.5vw] top-[0.5vw] -rotate-45 w-[2vw] h-[2vw] text-white"/>
-              <div className="text-white">
-                <h1 className="font-bold text-[2.5vw]">77%</h1>
-                <p className="font-normal text-[1.2vw]">JavaScript</p>
+            <div className="flex flex-col h-[50%] bg-gradient-to-l from-[#bc4e9c] from-1% to-[#f80759] justify-center items-center relative sm:w-auto w-full sm:rounded-b-[1vw] rounded-b-[4vw] sm:py-[0vw] py-[10vw]">
+              <ChevronRight className="absolute sm:right-[0.5vw] right-[1.5vw] sm:top-[0.5vw] top-[1.5vw] -rotate-45 sm:w-[2vw] w-[8vw] sm:h-[2vw] h-[8vw] text-white"/>
+              <div className="flex flex-col sm:items-start items-center text-white">
+                <h1 className="font-bold sm:text-[2.5vw] text-[10vw]">77%</h1>
+                <p className="font-normal sm:text-[1.2vw] text-[5vw]">JavaScript</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-row h-[30%] gap-x-[2.5vw]">
-          <div className="flex flex-col min-w-[30%] h-full justify-center items-center text-white rounded-[1vw] relative bg-gradient-to-t from-[#0f2027] via-[#203a43] to-[#2c5364]">
-            <ChevronRight className="absolute right-[0.5vw] top-[0.5vw] -rotate-45 w-[2vw] h-[2vw]"/>
+        <div className="flex sm:flex-row flex-col h-[30%] gap-x-[2.5vw] sm:gap-y-[0vw] gap-y-[10vw]">
+          <div className="flex flex-col min-w-[30%] h-full justify-center items-center text-white sm:rounded-[1vw] rounded-[4vw] relative bg-gradient-to-t from-[#0f2027] via-[#203a43] to-[#2c5364] sm:py-[0vw] py-[20vw]">
+            <ChevronRight className="absolute sm:right-[0.5vw] right-[1.5vw] sm:top-[0.5vw] top-[1.5vw] -rotate-45 sm:w-[2vw] w-[8vw] sm:h-[2vw] h-[8vw] text-white"/>
             <div className="flex flex-row items-center">
-              <FileBadge className="w-[2vw] h-[2vw]" strokeWidth={3}/>
-              <h1 className="font-bold text-[2.5vw]">5</h1>
+              <FileBadge className="sm:w-[2vw] w-[8vw] sm:h-[2vw] h-[8vw]" strokeWidth={3}/>
+              <h1 className="font-bold sm:text-[2.5vw] text-[10vw]">5</h1>
             </div>
-            <p className="font-normal text-[1.2vw]">Certifications</p>
-            {/* <Carousel
-              className="h-full w-full"
-              plugins={[
-                Autoplay({
-                  delay: 5000
-                })
-              ]}
-            >
-              <CarouselContent>
-                {
-                  carousel_data?.map((item: any, index: number) => (
-                    <CarouselItem>
-                      <div className="w-full h-64 relative">
-                        <img className="absolute inset-0 w-full h-full object-fill rounded-[1vw]" src={item.image_path} alt="..."/>
-                      </div>
-                    </CarouselItem>
-                  ))
-                }
-              </CarouselContent>
-            </Carousel> */}
+            <p className="font-normal sm:text-[1.2vw] text-[5vw]">Certifications</p>
           </div>
-          <div className="flex flex-row min-w-[65%] h-full bg-black text-white rounded-[1vw]">
-            <div className="flex w-[40%] justify-center items-center relative">
+          <div className="flex sm:flex-row flex-col min-w-[65%] h-full bg-black text-white sm:rounded-[1vw] rounded-[4vw]">
+            <div className="flex sm:w-[40%] w-full justify-center items-center relative">
               <Image
-                className="absolute top-0 left-0 object-contain w-[100vw] h-full rounded-[1vw] p-5"
+                className="object-contain w-[100vw] h-full rounded-[1vw] p-5"
                 src="/portfolio/sphere.svg"
                 alt="..."
                 draggable={false}
@@ -157,12 +136,12 @@ const Hero = () => {
                 height={720}
               />
             </div>
-            <div className="flex flex-col w-[60%] justify-center items-center bg-gradient-to-r from-[#f7971e] to-[#ffd200] h-full rounded-[1vw] relative">
+            <div className="flex flex-col sm:w-[60%] w-full justify-center items-center bg-gradient-to-r from-[#f7971e] to-[#ffd200] h-full sm:rounded-[1vw] rounded-[4vw] relative sm:py-[0vw] py-[20vw]">
               <ChevronRight className="absolute right-[0.5vw] top-[0.5vw] -rotate-45 w-[2vw] h-[2vw] text-black opacity-40"/>
-              <div className="text-black">
-                <h1 className="font-bold text-[2.5vw]">172</h1>
-                <p className="font-light text-[1vw]">Global Design</p>
-                <p className="font-light text-[1.5vw]">Awards</p>
+              <div className="flex flex-col sm:items-start items-center text-black">
+                <h1 className="font-bold sm:text-[2.5vw] text-[10vw]">172</h1>
+                <p className="font-light sm:text-[1.2vw] text-[5vw]">Global Design</p>
+                <p className="font-normal sm:text-[1.5vw] text-[6vw]">Awards</p>
               </div>
             </div>
           </div>
@@ -171,5 +150,26 @@ const Hero = () => {
     </div>
   )
 }
+
+{/* <Carousel
+      className="h-full w-full"
+      plugins={[
+        Autoplay({
+          delay: 5000
+        })
+      ]}
+    >
+      <CarouselContent>
+        {
+          carousel_data?.map((item: any, index: number) => (
+            <CarouselItem>
+              <div className="w-full h-64 relative">
+                <img className="absolute inset-0 w-full h-full object-fill rounded-[1vw]" src={item.image_path} alt="..."/>
+              </div>
+            </CarouselItem>
+          ))
+        }
+      </CarouselContent>
+    </Carousel> */}
 
 export default Hero;
