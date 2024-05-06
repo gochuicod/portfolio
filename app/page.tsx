@@ -1,10 +1,15 @@
 "use client"
 
 import Hero from "@/components/Hero";
+import { useEffect } from "react";
 import ReactPageScroller from "react-page-scroller";
 
 const Home = () => {
-  const isMobile = window.innerWidth <= 768
+  let isMobile: boolean = false
+
+  useEffect(() => {
+    isMobile = window.innerWidth <= 768
+  }, [])
 
   return (
     !isMobile ?
