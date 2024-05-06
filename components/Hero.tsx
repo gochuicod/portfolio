@@ -90,7 +90,7 @@ const Hero = () => {
       <div className="flex flex-col sm:w-[60%] w-full rounded-[1vw] sm:gap-y-[2.5vw] gap-y-[10vw]">
         <div className="flex flex-row w-full h-[15%] rounded-[1vw] relative">
           <ChevronRight className="absolute right-[-0.5vw] top-[-0.5vw] -rotate-45 sm:w-[4vw] w-[8vw] sm:h-[4vw] h-[8vw]" strokeWidth={3}/>
-          <h1 className="sm:text-[5vw] text-[10vw] tracking-[2.1vw] font-bold">My Portfolio</h1>
+          <h1 className="sm:text-[5vw] text-[10vw] tracking-[2.1vw] font-bold text-black">My Portfolio</h1>
         </div>
         <div className="flex sm:flex-row flex-col h-[55%] items-center gap-x-[2.5vw] sm:gap-y-[0vw] gap-y-[10vw]">
           <div className="relative sm:min-w-[75%] min-w-full h-full">
