@@ -9,13 +9,15 @@ const Hero = () => {
     <div className="flex lg:flex-row md:flex-row flex-col bg-white text-black lg:p-[3vw] md:p-[3vw] p-[7vw] lg:min-h-[100vh] md:min-h-[45vh] lg:max-h-[100vh] md:max-h-[45vh] gap-x-[3vw]">
       {/* Left Side */}
       <div className="flex flex-col justify-center items-center lg:w-[45%] md:w-[45%] w-[100%] bg-gradient-to-t from-[#4568dc] to-[#b06ab3] lg:rounded-[1.5vw] md:rounded-[1.5vw] rounded-[5vw] lg:p-[3vw] md:p-[3vw] p-[10vw] lg:gap-y-[3vw] md:gap-y-[3vw] gap-y-[6vw]">
-        <img
+        <Image
           className="rotate-90 rounded-full lg:w-[20vw] md:w-[20vw] w-[50vw] lg:h-[20vw] md:h-[20vw] h-[50vw] object-cover lg:border-[0.5vw] md:border-[0.5vw] border-[1.5vw] lg:p-[1vw] md:p-[1vw] p-[2.5vw]"
           src="/portfolio/IMG_5211.webp"
           alt=""
+          width={1080}
+          height={720}
         />
         <p className="text-center text-white lg:text-[3vw] md:text-[4vw] text-[10vw] lg:leading-[3vw] md:leading-[4vw] leading-[10vw]">
-          I'm,<br/>
+          I&apos;m,<br/>
           <b>Darelle</b><br/>
           <b>Gochuico</b>
         </p>
@@ -74,10 +76,12 @@ const Hero = () => {
           </div>
           {/* Some Stats */}
           <div className="flex flex-row w-full bg-black lg:rounded-[1.5vw] md:rounded-[1.5vw] rounded-[5vw] justify-center items-center">
-            <img
+            <Image
               className="object-contain lg:rounded-[1.5vw] md:rounded-[1.5vw] rounded-[5vw] lg:w-[15vw] md:w-[13vw] w-[25vw]"
               src="/portfolio/sphere.svg"
               alt="..."
+              width={1080}
+              height={720}
             />
             <div className="flex flex-col w-full bg-gradient-to-r from-[#f7971e] to-[#ffd200] h-[100%] lg:rounded-[1.5vw] md:rounded-[1.5vw] rounded-[5vw] justify-center items-center relative">
               <ChevronRight className="absolute right-[0.5vw] top-[0.5vw] -rotate-45 lg:w-[2vw] md:w-[2vw] w-[6vw] lg:h-[2vw] md:h-[2vw] h-[6vw] text-black opacity-60"/>
